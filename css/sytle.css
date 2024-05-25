@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: url("../assets/images/header-bg-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#bgImage2 {
+  background: black url("../assets/images/bg-image.jpg") no-repeat fixed center;
+  background-blend-mode: overlay;
+}
+
+#portfolio-image img {
+  object-fit: cover;
+  width: 95%;
+  height: 350px;
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #portfolio-image img {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #portfolio-image img {
+    max-width: 350px;
+  }
+}
